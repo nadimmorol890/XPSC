@@ -66,9 +66,9 @@ int main() {
 //         int ans = INT_MIN;
 //         for (int i = 0;i < n;i++) {
 //             if (s[i] == ch) {
-//                 auto UB = green_signals_pos.lower_bound(i + 1);
-//                 if (UB != green_signals_pos.end()) {
-//                     int diff = (*UB - (i + 1));
+//                 auto LB = green_signals_pos.lower_bound(i + 1);
+//                 if (LB != green_signals_pos.end()) {
+//                     int diff = (*LB - (i + 1));
 //                     ans = max(ans, diff);
 //                 }
 //                 else {
